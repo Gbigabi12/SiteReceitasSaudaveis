@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receitas Saudáveis - Alimente-se Bem</title>
+  <style>
+    :root {
+      --cor-principal: #5be26d;
+      --cor-secundaria: #5be26d;
+      --cor-texto: #222;
+      --cor-fundo: #fafafa;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto);
+    }
+
+    header {
+      background-color: var(--cor-principal);
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+     nav {
+      background-color: var(--cor-secundaria);
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      gap: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 8px 16px;
+      background: #fff;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      color: var(--cor-texto);
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: var(--cor-principal);
+      color: #000;
+    }
+
+
+    main {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .receita {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .receita:hover {
+      transform: scale(1.02);
+    }
+
+    .receita img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .receita h2 {
+      margin: 10px 0;
+      color: var(--cor-principal);
+    }
+
+    .info {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      margin: 10px 0 5px;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    footer {
+      background-color: var(--cor-secundaria);
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      color: #fff;
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Receitas Saudáveis</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="horta.html">Horta</a></li>
+      <li><a href="dicaseaproveitamento.html">Dicas Econômicas e Aproveitamento Integral dos Alimentos</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <article class="receita">
+      <img src="salada.jfif" alt="Salada colorida saudável">
+      <h2>Salada Colorida</h2>
+      <p class="info">⏱ 15 min | 🍽 2 porções</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li>1 cenoura ralada</li>
+        <li>1 pepino em rodelas</li>
+        <li>Folhas de alface</li>
+        <li>Tomates</li>
+        <li>Cebola roxa</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Lave bem os vegetais.</li>
+        <li>Corte e misture em uma tigela.</li>
+        <li>Tempere com azeite, limão e sal.</li>
+      </ol>
+    </article>
+
+ 
+    <article class="receita">
+      <img src="vitamina.jfif" alt="Vitamina de frutas saudável" >
+      <h2>Vitamina de Frutas</h2>
+      <p class="info">⏱ 5 min | 🍽 1 porção</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li>1 banana</li>
+        <li>1 fatia de mamão</li>
+        <li>1 copo de leite (pode ser vegetal)</li>
+        <li>1 colher de aveia</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Descasque as frutas.</li>
+        <li>Bata todos os ingredientes no liquidificador.</li>
+        <li>Sirva gelado.</li>
+      </ol>
+    </article>
+
+  
+    <article class="receita">
+      <img src="sopa.jfif" alt="Sopa de legumes saudável">
+      <h2>Sopa de Legumes</h2>
+      <p class="info">⏱ 40 min | 🍽 4 porções</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li>2 batatas</li>
+        <li>1 cenoura</li>
+        <li>1 abobrinha</li>
+        <li>1 cebola</li>
+        <li>Temperos a gosto</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Refogue a cebola em um fio de azeite.</li>
+        <li>Adicione os legumes picados e água suficiente.</li>
+        <li>Cozinhe até os legumes ficarem macios.</li>
+        <li>Acerte o sal e sirva quente.</li>
+      </ol>
+    </article>
+
+    <article class="receita">
+      <img src="crepioca.jfif" alt="Crepioca">
+      <h2>Crepioca</h2>
+      <p class="info">⏱ 5 min | 🍽 1 porção </p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li>1 ovo</li>
+        <li>1 colher de goma de tapioca</li>
+        <li>Sal a gosto</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Em um recipiente, bata bem o ovo.</li>
+        <li>Adicione a goma de tapioca e bata novamente (pode bater com um garfo mesmo), até obter uma mistura homogênea.</li>
+        <li>Coloque todo o conteúdo em uma frigideira antiaderente levemente quente e mantenha em fogo baixo.
+Deixe por alguns segundos e vire para dourar do outro lado.</li>
+      </ol>
+    </article>
+
+    <article class="receita">
+      <img src="panqueca.jpg" alt="Panqueca de banana">
+      <h2>Panqueca de banana</h2>
+      <p class="info">⏱ 15 min | 🍽 1 porção</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li>2 bananas</li>
+        <li>2 colheres de aveia</li>
+        <li>1 colher de cacau em pó 100%</li>
+        <li>2 ovos</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Amasse a banana, depois coloque em um recipiente fundo, bata com o garfo os 2 ovos junto com a banana, depois acrescente a aveia e o cacau.</li>
+        <li>Bata tudo com o garfo e depois coloque na frigideira untada e antiaderente, tampe a frigideira e vire após dourar.</li>
+      </ol>
+    </article>
+
+    <article class="receita">
+      <img src="omelete.jfif" alt="Omelete">
+      <h2>Omelete</h2>
+      <p class="info">⏱ 15 min | 🍽 1 porção</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li>2 ovos</li>
+        <li>1 fatia de queijo</li>
+        <li>Sal</li>
+        <li>Tempero verde a gosto</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Bata os 2 ovos, pode ser na batedeira ou não.</li>
+        <li>Após ter batido bem, coloque-o na frigideira já untada com óleo, acrescente o sal e as duas fatias de queijo (não precisa picar o queijo).</li>
+        <li>Coloque os temperos a gosto, espere ficar firme, e vire o omelete.</li>
+      </ol>
+    
+    </article>
+
+      <article class="receita">
+      <img src="picole.jpg" alt="Picolé de Frutas Vermelhas">
+      <h2>Picolé de Frutas Vermelhas</h2>
+      <p class="info">⏱ 10 min | 🍽 4 porções</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li>1 xícara (chá) de framboesas congeladas</li>
+        <li>1 xícara (chá) de morangos congelados</li>
+        <li>1/2 xícara (chá) de suco de uva gelado</li>
+        <li>1/2 xícara (chá) de água gelada</li>
+      </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Bata todos os ingredientes no liquidificador até formar uma mistura homogênea.</li>
+        <li>Em seguida, coloque a mistura em forminhas de picolé e leve ao congelador até estarem firmes.</li>
+      </ol>
+    </article>
+
+      <article class="receita">
+      <img src="paodequeijo.jpg" alt="Pão de queijo de frigideira ">
+      <h2>Pão de queijo de frigideira</h2>
+      <p class="info">⏱ 15 min | 🍽 1 porção</p>
+
+      <h3>Ingredientes</h3>
+      <ul>
+        <li>1 ovo</li>
+        <li>1 clara</li>
+        <li>1 colher de sopa de água</li>
+        <li>2 colheres de sopa de polvilho doce</li>
+        <li>1 colher de sopa de polvilho azedo</li>
+        <li>1 colher de sopa do queijo de sua preferência</li>
+        <li>1 pitada de sal</li>
+    </ul>
+
+      <h3>Modo de Preparo</h3>
+      <ol>
+        <li>Bata todos os ingredientes no liquidificador.</li>
+        <li>Coloque em uma frigideira antiaderente, em fogo baixo, até cozinhar e soltar do fundo.</li>
+        <li>Vire a massa do outro lado para dourar.</li>
+      </ol>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Alimente-se Bem | Receitas Saudáveis</p>
+  </footer>
+</body>
+</html>

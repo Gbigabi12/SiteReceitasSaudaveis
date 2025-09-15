@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alimente-se Bem - Dicas de Alimentação Saudável e Acessível</title>
+  <style>
+    :root {
+      --cor-principal: #6ed37b;
+      --cor-secundaria:  #6ed37b;
+      --cor-texto: #222;
+      --cor-fundo: #fff;
+      --espaco: 16px;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--cor-principal);
+      color: #000;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      background-color: var(--cor-secundaria);
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      gap: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 8px 16px;
+      background: #fff;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      color: var(--cor-texto);
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: var(--cor-principal);
+      color: #000;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: var(--espaco);
+      padding: var(--espaco);
+    }
+
+    aside img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    section {
+      font-size: 1.1rem;
+      text-align: justify;
+    }
+
+    footer {
+      background-color: var(--cor-secundaria);
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.8rem;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alimente-se Bem – Dicas de Alimentação Saudável e Acessível</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="receitas.html">Receitas</a></li>
+      <li><a href="horta.html">Horta Caseira</a></li>
+      <li><a href="dicaseaproveitamento.html">Dicas Econômicas e Aproveitamento Integral dos Alimentos</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <aside>
+      <img src="coração.jfif" alt="Imagem de um coração saudável">
+    </aside>
+
+    <section>
+      <h2>Bem-vindo ao Alimente-se Bem - Seu Guia para uma Vida Saudável!</h2>
+      <p>
+        Cuidar do que você come é cuidar de quem você é. Aqui no Alimente-se Bem,
+        acreditamos que uma alimentação saudável vai muito além de contar calorias —
+        trata-se de equilíbrio, sabor, bem-estar e escolhas conscientes que nutrem o corpo e a mente.
+      </p>
+      <p>
+        Nosso objetivo é te inspirar a adotar hábitos alimentares mais naturais,
+        variados e sustentáveis. Para isso, oferecemos conteúdos confiáveis e acessíveis
+        sobre nutrição, dicas práticas do dia a dia, receitas saudáveis,
+        informações sobre alimentos e muito mais.
+      </p>
+      <p>
+        Seja você alguém que está começando agora a repensar sua alimentação,
+        ou já busca aprimorar seu estilo de vida, aqui é o seu espaço.
+        Vamos juntos nessa jornada de transformação, com mais saúde, energia e qualidade de vida!
+      </p>
+      <p><strong>Alimente-se bem. Viva melhor. Viva leve.</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Alimente-se Bem | Receitas Saudáveis</p>
+  </footer>
+</body>
+</html>

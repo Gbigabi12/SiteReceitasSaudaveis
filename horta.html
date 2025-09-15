@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horta Caseira - Alimente-se Bem</title>
+  <style>
+    :root {
+      --cor-principal: #5be26d;
+      --cor-secundaria: #5be26d; 
+      --cor-texto: #222;
+      --cor-fundo: #fafafa;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto);
+    }
+
+    header {
+      background-color: var(--cor-principal);
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    nav {
+      background-color: var(--cor-secundaria);
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      gap: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 8px 16px;
+      background: #fff;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      color: var(--cor-texto);
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: var(--cor-principal);
+      color: #000;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .intro img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-top: 10px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .planta {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .planta:hover {
+      transform: scale(1.02);
+    }
+
+    .planta img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .planta h3 {
+      color: var(--cor-principal);
+      margin-bottom: 5px;
+    }
+
+    .planta p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .dicas {
+      background: var(--cor-secundaria);
+      color: #000;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: var(--cor-secundaria);
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      color: #fff;
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Horta Caseira</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="receitas.html">Receitas</a></li>
+      <li><a href="dicaseaproveitamento.html">Dicas Econômicas e Aproveitamento Integral dos Alimentos</a></li>
+    </ul>
+  </nav>
+
+  <section class="intro">
+    <h2>Por que ter uma horta em casa?</h2>
+    <p>
+      Cultivar sua própria horta é uma forma prática de ter alimentos frescos,
+      saudáveis e livres de agrotóxicos. Além de ser econômico, cuidar das
+      plantas traz bem-estar e aproxima você da natureza.
+    </p>
+    <img src="horta.jfif" alt="Imagem de uma horta caseira saudável">
+    <img src="horta2.jfif" alt="Imagem de uma horta caseira saudável">
+    <img src="horta3.jfif" alt="Imagem de uma horta caseira saudável">
+  </section>
+
+  <main>
+    <!-- Planta 1 -->
+    <article class="planta">
+      <img src="manjericao.jfif" alt="Manjericão fresco em vaso">
+      <h3>Manjericão</h3>
+      <p><strong>Rega:</strong> 3x por semana | <strong>Luz:</strong> Sol pleno</p>
+
+      <h4>Como plantar:</h4>
+      <ol>
+        <li>Escolha um vaso com boa drenagem.</li>
+        <li>Use terra rica em matéria orgânica.</li>
+        <li>Regue regularmente sem encharcar.</li>
+        <li>Colha as folhas do topo para estimular novos brotos.</li>
+      </ol>
+    </article>
+
+    <!-- Planta 2 -->
+    <article class="planta">
+      <img src="alface.jfif" alt="Alface crespa saudável">
+      <h3>Alface</h3>
+      <p><strong>Rega:</strong> Diária | <strong>Luz:</strong> Sol pleno ou meia sombra</p>
+
+      <h4>Como plantar:</h4>
+      <ol>
+        <li>Plante em solo leve e bem drenado.</li>
+        <li>Mantenha o solo sempre úmido.</li>
+        <li>Colha folhas externas conforme crescem.</li>
+      </ol>
+    </article>
+
+    <!-- Planta 3 -->
+    <article class="planta">
+      <img src="cebolinha.jfif" alt="Cebolinha fresca">
+      <h3>Cebolinha</h3>
+      <p><strong>Rega:</strong> 4x por semana | <strong>Luz:</strong> Sol pleno</p>
+
+      <h4>Como plantar:</h4>
+      <ol>
+        <li>Plante mudas ou utilize a raiz da cebolinha comprada.</li>
+        <li>Regue com frequência sem encharcar.</li>
+        <li>Colha as folhas externas e deixe as internas crescerem.</li>
+      </ol>
+    </article>
+  </main>
+
+  <section class="dicas">
+    <h2>Dicas Gerais</h2>
+    <ul>
+      <li>Prefira plantar em locais bem iluminados.</li>
+      <li>Use adubo orgânico para fortalecer o solo.</li>
+      <li>Evite excesso de água para não apodrecer as raízes.</li>
+      <li>Faça rotação de culturas para manter o solo saudável.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Alimente-se Bem | Horta Caseira Sustentável</p>
+  </footer>
+</body>
+</html>
